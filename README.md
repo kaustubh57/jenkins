@@ -16,3 +16,10 @@ http://goodliffe.blogspot.com/2011/09/how-to-set-up-jenkins-ci-on-mac.html
     - chown -R [USER_NAME] /var/lib/jenkins
     - chown -R [USER_NAME] /var/run/jenkins
     - chown -R [USER_NAME] /var/cache/jenkins
+    
+## ISSUES: 
+###Launchd is not starting Jenkins server on OS X Yosemite
+http://stackoverflow.com/questions/26483089/launchd-is-not-starting-jenkins-server-on-os-x-yosemite
+- `sudo chmod 777 /var/log/jenkins`
+- `sudo chmod 777 /Users/Shared/Jenkins/`
+- `sudo chmod 777 /Users/Shared/Jenkins/tmp/`
